@@ -16,13 +16,13 @@ First clone the project to a local folder:
 git clone https://github.com/thomasjackdalby/shopping.py.git <target-folder>
 ```
 
-Navigate to the cloned folder
+Then, navigate to the cloned folder:
 
 ``` terminal
 cd <target-folder>
 ```
 
-Install required packages:
+Next, install required packages from PyPI using pip.
 
 ``` terminal
 python -m pip install -r ./requirements.txt
@@ -34,8 +34,14 @@ Likewise, the receipt printer should enumerate over the COM port (and the correc
 
 ## Usage
 
-To run the script, first navigate to the containing folder and run:
+Usage is fairly straightforward. First, to run the script, navigate to the containing folder and run:
 
 ``` terminal
 python ./shopping.py
 ```
+
+The script will then loop giving the prompt `SCAN>`, at which point if a barcode is scanned the item is logged and it's amount incremented by 1.
+
+When the END_CODE is scanned, the shopping list is terminated and subsequently printed out via the receipt printer.
+
+ℹ️ If the item is not in the loaded items, an additional prompt is shown allowing the user to enter a name fo the item, which is then added to the loaded items ready for subsequent scans.
