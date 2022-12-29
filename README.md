@@ -8,17 +8,29 @@ The setup included a cheap barcode scanner purchased from Amazon, and an Epson T
 
 ## Getting Started
 
+⚠️ Note: this project has only been developed/tested on Windows. The setup process will likely be different for Mac/Linux.
+
 First clone the project to a local folder:
 
 ``` terminal
 git clone https://github.com/thomasjackdalby/shopping.py.git <target-folder>
 ```
 
-Navigate to the cloned folder, and install required packages:
+Navigate to the cloned folder
+
+``` terminal
+cd <target-folder>
+```
+
+Install required packages:
 
 ``` terminal
 python -m pip install -r ./requirements.txt
 ```
+
+In terms of hardware, the barcode scanner should enumerate as a keyboard device so no additional setup should be required.
+
+Likewise, the receipt printer should enumerate over the COM port (and the correct port can be identified using Device Manager)
 
 ## Usage
 
