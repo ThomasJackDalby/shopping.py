@@ -1,0 +1,4 @@
+/.venv
+items.json
+**/*.pyc
+**/__pycache__
